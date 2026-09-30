@@ -1,0 +1,8 @@
+'''!
+Configuration pour accès à l'API REST
+'''
+
+HOST = "http://localhost"
+API_DIR = "/but/SAE502_epi_php/gestion_epi/www/api"
+USERNAME = "vincent"
+USERPASS = ""
