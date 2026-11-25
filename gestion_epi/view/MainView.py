@@ -38,6 +38,7 @@ class MainView(QMainWindow):
         self.__m2 = QMenu("&Gestion")
         self.__menub.addMenu(self.__m2)
         self.__actionCreateManUI = self.__m2.addAction(QIcon("icons/manage.png"),"Gestion &fabricants")
+        self.__actionControlUI = self.__m2.addAction(QIcon("icons/manage.png"),"&Contrôles périodiques")
         
         #widgets de l'interface
         '''!
@@ -46,6 +47,7 @@ class MainView(QMainWindow):
         
         #Gestion des événements pour les différentes actions des menus
         self.__actionCreateManUI.triggered.connect(self.__ctrl.manufacturerUI)
+        self.__actionControlUI.triggered.connect(self.__ctrl.controlUI)
         self.__act_quit.triggered.connect(self.__ctrl.quit)
         
         #Affichage vue
